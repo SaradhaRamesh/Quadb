@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">HODLINFO</div>
+            <div class="prices">
+                <div class="price" id="price1">0.1 %<br><span>5 Mins</span></div>
+                <div class="price" id="price2">0.96 %<br><span>1 Hour</span></div>
+                <div class="best-price">Best Price to Trade<br>₹ 26,56,110</div>
+                <div class="price" id="price3">2.73 %<br><span>1 Day</span></div>
+                <div class="price" id="price4">7.51 %<br><span>7 Days</span></div>
+            </div>
+            <div class="buttons">
+                <button>INR</button>
+                <button>BTC</button>
+                <button>BUY BTC</button>
+            </div>
+            <div class="telegram">
+                <button>Connect Telegram</button>
+                <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody id="tickers">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
