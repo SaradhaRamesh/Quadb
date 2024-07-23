@@ -1,10 +1,11 @@
-// backend/server.js
 const express = require('express');
 const axios = require('axios');
 const pool = require('./db');
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
+app.use(cors());
 app.use(express.json());
 
 const fetchAndStoreData = async () => {

@@ -9,28 +9,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">HODLINFO</div>
+            <h1>HODLINFO</h1>
             <div class="prices">
-                <div class="price" id="price1">0.1 %<br><span>5 Mins</span></div>
-                <div class="price" id="price2">0.96 %<br><span>1 Hour</span></div>
-                <div class="best-price">Best Price to Trade<br>₹ 26,56,110</div>
-                <div class="price" id="price3">2.73 %<br><span>1 Day</span></div>
-                <div class="price" id="price4">7.51 %<br><span>7 Days</span></div>
+                <span class="price" id="price1">0.1 %</span>
+                <span class="price" id="price2">0.96 %</span>
+                <span class="price" id="price3">2.73 %</span>
+                <span class="price" id="price4">7.51 %</span>
             </div>
-            <div class="buttons">
-                <button>INR</button>
-                <button>BTC</button>
-                <button>BUY BTC</button>
-            </div>
-            <div class="telegram">
-                <button>Connect Telegram</button>
-                <div class="toggle-container">
-                    <label class="switch">
-                        <input type="checkbox" id="dark-mode-toggle">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </div>
+            <div class="best-price">Best Price to Trade: <span id="best-price"></span></div>
         </div>
         <table>
             <thead>
@@ -44,7 +30,6 @@
                 </tr>
             </thead>
             <tbody id="tickers">
-                <!-- Data will be inserted here -->
             </tbody>
         </table>
     </div>
